@@ -1,7 +1,7 @@
 package com.Arrays;
 
 import java.util.Arrays;
-
+import java.util.Scanner;
 
 
 public class MergeArr {
@@ -43,5 +43,7 @@ public class MergeArr {
         int [] arr2={0,3,5,7};
         int [] arr3 = mergeSortedArrays(arr1,arr2);
         System.out.println(Arrays.toString(arr3));
+        Scanner in = new Scanner(System.in);
+
     }
 }
