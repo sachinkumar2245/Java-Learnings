@@ -2,7 +2,7 @@ package com.Recursion;
 
 public class sortedArray {
     public static void main(String[] args) {
-        int[] arr = {1,3,7};
+        int[] arr = {1,3,7,6};
         System.out.println(isSorted(arr));
     }
 
@@ -14,6 +14,11 @@ public class sortedArray {
         }
 
         int[] smallArray = new int[arr.length -1];
+
+        for (int i = 1; i < arr.length; i++) {
+            smallArray[i-1] = arr[i];
+        }
+
         boolean isSmallArrSorted = isSorted(smallArray);
         return isSmallArrSorted;
     }
